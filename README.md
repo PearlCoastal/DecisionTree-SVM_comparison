@@ -1,10 +1,55 @@
 # A simple experience of Desion Tree and SVM
 
-A simple comparison experiment of Decision Tree and SVM.
+A simple comparison experiment of supervised machine learning method: Decision Tree and SVM.
 
 ## Dataset
 
-## Discussion
+Dataset named "Penguin" imported from seaborn data.
+
+url 👉 "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv"
+
+## Dataset pre-processing procedure
+
+Because the initial dataset contains "species", "island" and "sex" which are string and I've transformed them into float using "replace"
+
+Like in species there are three kinds : "Adelie, Chinstrap, Gentoo", and they are in "string"so I replace it with "0,1,2" which is in "float"
+
+The island and sex are pre-processed as the same.
+
+Here are the dataset after pre-processed.
+![image](https://github.com/PearlCoastal/DecisionTree-SVM_comparison/blob/master/svm_dt/%E6%88%AA%E5%B1%8F0003-07-29%2017.37.41.png)
+
+## Split the dataset into training set and test set
+
+- using 'species', 'island', 'culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g' as training feature
+- using 'sex' as label
+
+Seperate dataset into training and test set as train size as 8/10 and test size as 2/10.
+
+![image](https://github.com/PearlCoastal/DecisionTree-SVM_comparison/blob/master/svm_dt/%E6%88%AA%E5%B1%8F0003-07-29%2017.46.17.png)
+
+## Using Decision Tree and construct a tree first
+
+Import tree from sklearn.
+
+Because entropy is the expected value of information amount, so when entropy is high, its difficule to seperate, while entropy is low, its good.
+
+So the criterion choose entropy in order to measure the quality or a split.
+
+Then using plot function to train the tree.
+
+Here is the Decision Tree.
+![image](https://github.com/PearlCoastal/DecisionTree-SVM_comparison/blob/master/svm_dt/%E6%88%AA%E5%B1%8F0003-07-29%2017.52.25.png)
+
+## Result of the Desicion Tree
+
+![image](https://github.com/PearlCoastal/DecisionTree-SVM_comparison/blob/master/svm_dt/%E6%88%AA%E5%B1%8F0003-07-29%2017.38.08.png)
+
+## Result of the SVM
+
+![image](https://github.com/PearlCoastal/DecisionTree-SVM_comparison/blob/master/svm_dt/%E6%88%AA%E5%B1%8F0003-07-29%2017.38.26.png)
+
+## Discussion of this comparison
 
 Discison Tree is easily to interpret, and easily to be trained.
 
