@@ -1,10 +1,10 @@
-# A simple experience of Desion Tree and SVM
+# A simple experiment of Desion Tree and SVM
 
-A simple comparison experiment of supervised machine learning method: Decision Tree and SVM.
+A simple comparison experiment of supervised machine learning method: **Decision Tree and SVM**.
 
 ## Dataset
 
-Dataset named "Penguin" imported from seaborn data.
+Dataset named **"Penguin"** imported from seaborn data.
 
 url 👉 "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv"
 
@@ -12,7 +12,9 @@ url 👉 "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins
 
 Because the initial dataset contains "species", "island" and "sex" which are string and I've transformed them into float using "replace"
 
-Like in species there are three kinds : "Adelie, Chinstrap, Gentoo", and they are in "string"so I replace it with "0,1,2" which is in "float"
+Like in species there are three kinds : "Adelie, Chinstrap, Gentoo", and they are in "string".
+
+So I replace it with "0,1,2" which is in "float"
 
 The island and sex are pre-processed as the same.
 
@@ -21,7 +23,7 @@ Here are the dataset after pre-processed.
 
 ## Split the dataset into training set and test set
 
-- using 'species', 'island', 'culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g' as training feature
+- using 'species', 'island', 'culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g' as training feature  
 - using 'sex' as label
 
 Seperate dataset into training and test set as train size as 8/10 and test size as 2/10.
