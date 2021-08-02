@@ -36,7 +36,7 @@ Import tree from sklearn.
 
 Because entropy is the expected value of information amount, so when entropy is high, its difficule to seperate, while entropy is low, its good.
 
-So the criterion choose entropy in order to measure the quality or a split.
+So the criterion choose entropy in order to measure the quality of a split.
 
 Then using plot function to train the tree.
 
