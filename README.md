@@ -59,7 +59,7 @@ And because there are several missing values in 'penguin' dataset, and Decision 
 
 SVM are supervised models with associated learning algorithm that analyze data used for classification and regression analysis, based on the statistical learning framework.
 
-An SVM model performe better when dealing with high-dimentional space dataset, but when dealing with datasets which are at same space and predicted to belong to a category based on the side of the gap on which they fall.
+An SVM model performs better when dealing with high-dimentional space dataset, but when dealing with datasets which are at same space and predicted to belong to a category based on the side of the gap on which they fall.
 
 So as in my experiment when 'penguin' datasets are using an SVM model, the accuracy and F1-score are way lower than its in Decision Tree.
 
@@ -83,6 +83,6 @@ So under the dataset of penguin, Decison Tree performed better than SVM.
 
 ## Result
 
-In conclusion, in my consideration, Decision tree performs better when dealing with datatsets with missing values while SVM is not.
+In conclusion, Decision tree performs better when dealing with datatsets with missing values while SVM is not.
 
 And SVM performs better when dealing with high-dimentional space but 'penguin' is not, so the results of accuracy and F1-score are not as good as its in Decision Tree.
