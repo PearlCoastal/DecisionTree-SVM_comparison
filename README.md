@@ -24,7 +24,7 @@ Here are the dataset after pre-processed.
 ## Split the dataset into training set and test set
 
 - using 'species', 'island', 'culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g' as training feature  
-- using 'sex' as label
+- using 'sex' as target
 
 Seperate dataset into training and test set as train size as 8/10 and test size as 2/10.
 
